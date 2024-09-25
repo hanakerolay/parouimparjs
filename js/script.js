@@ -29,12 +29,12 @@ function calcularMedia() {
 }
 
 
-function verificarrenda() {
+function verificarRenda() {
     
     let rendaFamiliar = Number(document.getElementById("rendaFamiliar").value);
     let numeroMembros = Number(document.getElementById("numeroMembros").value);
 
-    const criterio = 1500.00;
+    const criterio = 2118.00;
     // Calcular a renda per capita
     let rendaPerCapita = rendaFamiliar / numeroMembros;
         
@@ -43,22 +43,6 @@ function verificarrenda() {
     } else {
         document.getElementById("resultadoren").innerText = "A renda per capita é R$" + rendaPerCapita + " você possuir uma renda maior que o permitido para se matricular ."
 
-    }
-}
-
-
-function calcu() {
-    let valorx = Number(document.getElementById("valorx").value)
-    let valory = Number(document.getElementById("valory").value)
-    
-    let iguais = (valorx * valory)
-    let diferentes = (valorx/valory)
-    if (iguais % 2 == 0 ) {
-    //saida aprovado
-    document.getElementById("resultadoXY") .innerText ="" + iguais + "Multiplicar"
-    } else{
-    //saida reprovado
-    document.getElementById ("diferentes").innerText ="" + diferentes + "Dividir"
     }
 }
 
