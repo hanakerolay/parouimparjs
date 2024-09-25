@@ -8,7 +8,7 @@
 </head>
 <body>
     <div>
-        <h1>Par ou Ímpar</h1>
+        <h2>Par ou Ímpar</h2>
         <input type="number" id="num" placeholder="digite em numero">
         <button type="submit" onclick="verificaParImpar()">Verificar</button>
         <div id="resultado"></div>
@@ -24,21 +24,40 @@
     </div>
     
     <div>
-        <h2>Calcular renda per capita</h2>
-        <input type="number" name="renda" id="renda" placeholder="valor d renda">
-        <input type="number" name="pessoa" id="pessoa" placeholder="quantidade de pessoa">
-        <button type="submit" class="btn btn-secondary rounded-pill" onclick="calcularRenda()">Calcular</button>
-        <p id="resultadomatri"></p>
+        <h2>Verificar renda para matrícula</h2>
+
+        <input type="number" name="rendaFamiliar" id="rendaFamiliar" placeholder="Digite a renda familiar">
+        <input type="number" name="numeroMembros" id="numeroMembros" placeholder="Digite o número de membros">
+        <button type="submit" class="btn btn-secondary rounded-pill" onclick="verificarrenda()">Calcular</button>
+        <p id="resultadoren"></p>
+
     </div>
     
     <div>
-        <h2>Calcular X e Y</h2>
+        <h2>Calculadora de Multiplicação ou Divisão</h2>
+
         <input type="number" name="valorx" id="valorx" placeholder="Digite o valor de X">
+
         <input type="number" name="valorY" id="valorY" placeholder="Digite o valor de Y">
+
         <button type="submit" class="btn btn-secondary rounded-pill" onclick="calcularXY()">Calcular</button>
+        
         <p id="resultadoXY"></p>
     </div>
-    
+    <div>
+        <h2>Calculadora de IMC</h2>
 
+            <input type="number" name="altura" id="altura" step="0.01" placeholder="Digite sua altura">
+
+            <select id="sexo">
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+            </select>
+
+            <button type="submit" class="btn btn-secondary rounded-pill" onclick="calcularPesoIdeal()">Calcular Peso Ideal</button>
+
+            <p id="resultadoideal"></p>
+    </div>
+    
 </body>
 </html>
